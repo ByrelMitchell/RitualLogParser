@@ -114,6 +114,13 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
+                        <DataGridTextColumn Header="T" Binding="{Binding Tier}" Width="Auto">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="{x:Type TextBlock}">
+                                    <Setter Property="HorizontalAlignment" Value="Center" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
                         <DataGridTextColumn Header="Rarity" Binding="{Binding Rarity}"/>
                         <DataGridTextColumn Header="ILvl" Binding="{Binding ItemLevel}" Width="Auto">
                             <DataGridTextColumn.ElementStyle>
@@ -134,7 +141,7 @@
                         <DataGridTextColumn Header="Total (s)" Binding="{Binding TotalParseTime, StringFormat='s\\.fff'}" Width="Auto"/>
                         <DataGridTextColumn Header="Find (s)" Binding="{Binding TributeFindTime, StringFormat='s\\.fff'}" Width="Auto"/>
                         <DataGridTextColumn Header="Cost Parse (s)" Binding="{Binding CostComputeTime, StringFormat='s\\.fff'}" Width="Auto"/>
-
+                        <DataGridTextColumn Header="TimeStamp" Binding="{Binding TimeStamp}" Width="Auto"/>
                     </DataGrid.Columns>
                     
                 </DataGrid>

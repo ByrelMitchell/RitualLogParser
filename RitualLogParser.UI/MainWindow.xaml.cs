@@ -73,7 +73,7 @@ namespace RitualLogParser.UI
                 {
                     csvContent.AppendLine(item.ToCsvLine());
                 }
-                File.AppendAllText(fileDialog.FileName, csvContent.ToString());
+                File.WriteAllText(fileDialog.FileName, csvContent.ToString());
             }
 
         }
