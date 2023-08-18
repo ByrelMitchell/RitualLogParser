@@ -140,6 +140,7 @@
                         </DataGridTextColumn>
                         <DataGridTextColumn Header="Total (s)" Binding="{Binding TotalParseTime, StringFormat='s\\.fff'}" Width="Auto"/>
                         <DataGridTextColumn Header="Find (s)" Binding="{Binding TributeFindTime, StringFormat='s\\.fff'}" Width="Auto"/>
+                        <DataGridTextColumn Header="Defer (s)" Binding="{Binding DeferTime, StringFormat='s\\.fff'}" Width="Auto"/>
                         <DataGridTextColumn Header="Cost Parse (s)" Binding="{Binding CostComputeTime, StringFormat='s\\.fff'}" Width="Auto"/>
                         <DataGridTextColumn Header="TimeStamp" Binding="{Binding TimeStamp}" Width="Auto"/>
                     </DataGrid.Columns>
