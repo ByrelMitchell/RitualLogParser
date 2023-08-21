@@ -26,6 +26,7 @@ namespace RitualLogParser.UI
     {
         public MainWindow()
         {
+            Console.WriteLine("RitualLogParser MainWindow is Initializing");
             InitializeComponent();
             DataContext = this;
             ViewModel.LoadLogFolder();
